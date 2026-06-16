@@ -5,75 +5,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gerrard Premium Hub</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<div class="bg-blur blur1"></div>
+<div class="bg-blur blur2"></div>
+
 <header>
-    <h1>Gerrard Premium Hub</h1>
-    <p>Netflix • Spotify • Apple Music • Snapchat+ • Account Boosting</p>
+    <div class="logo">⚡ Gerrard Premium Hub</div>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <section class="hero">
-    <h2>Premium Subscriptions At Affordable Prices</h2>
-    <p>Fast Delivery • Trusted Service • Instant Support</p>
-</section>
 
-<section class="services">
+    <span class="badge">🔥 Trusted Premium Services</span>
 
-<div class="card">
-<h3>Netflix</h3>
-<ul>
-<li>Mobile - $4.23</li>
-<li>Basic - $5.33</li>
-<li>Standard - $9.31</li>
-<li>Premium - $11.26</li>
-</ul>
-</div>
+    <h1>
+        Premium Subscriptions
+        <span>At Affordable Prices</span>
+    </h1>
 
-<div class="card">
-<h3>Snapchat+</h3>
-<ul>
-<li>1 Month - $3.39</li>
-<li>1 Year - $12.70</li>
-</ul>
-</div>
+    <p>
+        Netflix • Spotify • Apple Music • Snapchat+ • Social Media Boosting
+    </p>
 
-<div class="card">
-<h3>Spotify</h3>
-<ul>
-<li>Individual (3 Months) - $3.39</li>
-<li>Duo - $4.15</li>
-<li>Family - $5.08</li>
-<li>Student (3 Months) - $2.37</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Apple Music</h3>
-<ul>
-<li>Individual (1 Month) - $3.81</li>
-<li>Family (1 Month) - $6.35</li>
-<li>Individual (1 Year) - $32.84</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Account Boosting</h3>
-<ul>
-<li>Instagram Followers</li>
-<li>TikTok Followers</li>
-<li>Instagram Likes</li>
-<li>TikTok Likes</li>
-<li>YouTube Subscribers</li>
-</ul>
-</div>
+    <div class="hero-buttons">
+        <a href="#order" class="btn">Order Now</a>
+        <a href="https://www.snapchat.com/add/gyas.i" class="btn-outline">
+            Snapchat
+        </a>
+    </div>
 
 </section>
 
-<section class="order-section">
+<section class="stats">
+
+    <div class="stat">
+        <h2>500+</h2>
+        <p>Orders</p>
+    </div>
+
+    <div class="stat">
+        <h2>24/7</h2>
+        <p>Support</p>
+    </div>
+
+    <div class="stat">
+        <h2>Fast</h2>
+        <p>Delivery</p>
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+<div class="card">
+    <h3>🎬 Netflix</h3>
+    <p>Mobile, Basic, Standard & Premium Plans</p>
+</div>
+
+<div class="card">
+    <h3>🎵 Spotify</h3>
+    <p>Individual, Duo, Family & Student</p>
+</div>
+
+<div class="card">
+    <h3>🍎 Apple Music</h3>
+    <p>Monthly & Yearly Plans</p>
+</div>
+
+<div class="card">
+    <h3>👻 Snapchat+</h3>
+    <p>1 Month & 1 Year Packages</p>
+</div>
+
+<div class="card">
+    <h3>🚀 Account Boosting</h3>
+    <p>Instagram, TikTok & YouTube Growth</p>
+</div>
+
+<div class="card">
+    <h3>🎮 Gaming Services</h3>
+    <p>Robux, FC Points & More</p>
+</div>
+
+</section>
+
+<section class="order" id="order">
 
 <h2>Place Your Order</h2>
 
@@ -83,50 +109,41 @@
 
 <input type="tel" id="phone" placeholder="WhatsApp Number" required>
 
-<input type="text" id="snapUser" placeholder="Snapchat Username" required>
-
 <select id="service">
 
-<option>Netflix Mobile</option>
-<option>Netflix Basic</option>
-<option>Netflix Standard</option>
-<option>Netflix Premium</option>
-
-<option>Snapchat+ 1 Month</option>
-<option>Snapchat+ 1 Year</option>
-
-<option>Spotify Individual</option>
-<option>Spotify Duo</option>
-<option>Spotify Family</option>
-<option>Spotify Student</option>
-
-<option>Apple Music Individual</option>
-<option>Apple Music Family</option>
-<option>Apple Music 1 Year</option>
-
+<option>Netflix</option>
+<option>Spotify</option>
+<option>Apple Music</option>
+<option>Snapchat+</option>
 <option>Account Boosting</option>
+<option>Robux</option>
+<option>FC Points</option>
 
 </select>
 
 <textarea id="notes" placeholder="Additional Details"></textarea>
 
 <button type="submit">
-Send Order
+Send Order On WhatsApp
 </button>
 
 </form>
 
-<a href="https://www.snapchat.com/add/gyas.i" target="_blank" class="snap-btn">
-Contact Me On Snapchat
-</a>
-
 </section>
 
-<footer>
-<h3>Contact</h3>
-<p>WhatsApp: 0598371200 / 0503809093</p>
-<p>Snapchat: gyas.i</p>
+<footer id="contact">
+
+<h3>Contact Information</h3>
+
+<p>📱 0598371200 / 0503809093</p>
+
+<p>👻 Snapchat: gyas.i</p>
+
 </footer>
+
+<a href="https://wa.me/233598371200" class="whatsapp-btn">
+💬
+</a>
 
 <script src="script.js"></script>
 
