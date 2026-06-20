@@ -5,165 +5,87 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-background:#070b14;
+background:linear-gradient(-45deg,#0f172a,#111827,#1e293b,#0f172a);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
 color:white;
-overflow-x:hidden;
+min-height:100vh;
 }
 
-.bg-blur{
-position:fixed;
-border-radius:50%;
-filter:blur(120px);
-z-index:-1;
-}
-
-.blur1{
-width:300px;
-height:300px;
-background:#00ffb7;
-top:-100px;
-left:-100px;
-}
-
-.blur2{
-width:300px;
-height:300px;
-background:#0066ff;
-bottom:-100px;
-right:-100px;
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
+text-align:center;
+padding:40px;
 background:rgba(255,255,255,.05);
-backdrop-filter:blur(15px);
-position:sticky;
-top:0;
+backdrop-filter:blur(10px);
 }
 
-.logo{
-font-size:1.5rem;
-font-weight:700;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
+header h1{
+font-size:3rem;
+background:linear-gradient(90deg,#00ffb7,#00e5ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .hero{
-min-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
 text-align:center;
-padding:20px;
+padding:80px 20px;
 }
 
-.badge{
-padding:10px 20px;
-background:rgba(0,255,183,.15);
-border:1px solid #00ffb7;
-border-radius:50px;
-margin-bottom:20px;
-}
-
-.hero h1{
-font-size:4rem;
-max-width:900px;
-}
-
-.hero span{
-color:#00ffb7;
-}
-
-.hero p{
-margin-top:20px;
-opacity:.8;
-font-size:1.2rem;
-}
-
-.hero-buttons{
-margin-top:30px;
-display:flex;
-gap:15px;
-}
-
-.btn,
-.btn-outline{
-padding:15px 30px;
-border-radius:50px;
-text-decoration:none;
-font-weight:600;
-}
-
-.btn{
-background:#00ffb7;
-color:black;
-}
-
-.btn-outline{
-border:2px solid #00ffb7;
-color:white;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:40px 8%;
-}
-
-.stat{
-background:rgba(255,255,255,.05);
-padding:30px;
-border-radius:20px;
-text-align:center;
-}
-
-.stat h2{
-color:#00ffb7;
-font-size:2rem;
+.hero h2{
+font-size:3rem;
+margin-bottom:15px;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
-padding:60px 8%;
+padding:40px;
 }
 
 .card{
-background:rgba(255,255,255,.05);
-padding:30px;
+background:rgba(255,255,255,.08);
+padding:25px;
 border-radius:20px;
-transition:.3s;
+backdrop-filter:blur(15px);
+transition:.4s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 15px 30px rgba(0,255,183,.2);
+box-shadow:0 15px 30px rgba(0,255,183,.3);
 }
 
-.order{
-max-width:800px;
-margin:50px auto;
-padding:40px;
-background:rgba(255,255,255,.05);
-border-radius:25px;
+.card h3{
+color:#00ffb7;
+margin-bottom:15px;
 }
 
-.order h2{
+.card ul{
+list-style:none;
+}
+
+.card li{
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.order-section{
+max-width:700px;
+margin:40px auto;
+padding:30px;
+background:rgba(255,255,255,.08);
+border-radius:20px;
+}
+
+.order-section h2{
 text-align:center;
 margin-bottom:20px;
 }
@@ -178,39 +100,61 @@ input,
 select,
 textarea{
 padding:15px;
-background:#111827;
 border:none;
 border-radius:10px;
+background:rgba(255,255,255,.1);
 color:white;
+}
+
+select option{
+color:black;
+}
+
+textarea{
+height:120px;
+resize:none;
 }
 
 button{
 padding:15px;
-background:#00ffb7;
 border:none;
 border-radius:10px;
-font-weight:700;
 cursor:pointer;
+font-weight:600;
+background:linear-gradient(135deg,#25D366,#00ffb7);
+}
+
+.snap-btn{
+display:block;
+margin-top:20px;
+text-align:center;
+padding:15px;
+background:#fffc00;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
 }
 
 footer{
 text-align:center;
-padding:40px;
+padding:30px;
 margin-top:50px;
-background:#05070d;
+background:rgba(0,0,0,.3);
 }
 
-.whatsapp-btn{
-position:fixed;
-bottom:25px;
-right:25px;
-width:65px;
-height:65px;
-background:#25D366;
-display:flex;
-justify-content:center;
-align-items:center;
-border-radius:50%;
-font-size:28px;
-text-decoration:none;
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+.hero h2{
+font-size:2rem;
+}
+
+.services{
+padding:20px;
+}
+
 }
